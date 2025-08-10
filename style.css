@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0d6b37 50%, #076814 50%);
+  height: 100vh;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  background: rgb(93, 209, 109);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+
+.side-text {
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.side-text .rotate {
+  margin-top: 20px;
+  transform: rotate(180deg);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+header .icons span {
+  font-size: 1.2rem;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+
+.text-section {
+  max-width: 50%;
+}
+
+.text-section h1 {
+  font-size: 3rem;
+  color: #020000;
+}
+
+.text-section h1 span {
+  color: #06420e;
+}
+
+.text-section h3 {
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.text-section p {
+  margin: 20px 0;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff6f3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+.image-section {
+  position: relative;
+}
+
+.circle {
+  width: 350px;
+  height: 350px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.circle img {
+  width: 250px;
+  object-fit: cover;
+}
+
+
+.social {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
